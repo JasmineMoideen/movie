@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="form-group">
+    <label >Movie Name</label>
+    <input type="text" class="form-control" name="movie_name"  placeholder="Enter movie name">
+
+  </div>
+  <div class="form-group">
+    <label >Movie Description</label>
+    <input type="text" class="form-control" name="movie_desc"  placeholder="Enter movie desc">
+  </div>
+  <div class="form-group">
+    <label >Movie Year</label>
+    <input type="text" class="form-control" name="movie_year"  placeholder="Enter movie year">
+  </div>
+    <div class="form-group">
+    <label>Select a file:</label>
+<input type="file" name="movie_image" >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
